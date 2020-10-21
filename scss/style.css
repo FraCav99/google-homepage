@@ -116,7 +116,7 @@ header nav .right-elements__links button {
 }
 
 main {
-  height: 70vh;
+  height: 75vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,6 +187,65 @@ main .buttons-container button:hover {
 @media (max-width: 1000px) {
   main .form-container {
     width: 80%;
+  }
+  main .form-container form {
+    width: 75%;
+  }
+}
+
+footer {
+  background-color: #F2F2F2;
+  font-size: 14px;
+  color: #717188;
+}
+
+footer .location {
+  padding: 10px 0px 10px 20px;
+  border: 1px solid #ccc;
+}
+
+footer .footer-links__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 10px;
+}
+
+footer .footer-links__container .footer__links-1 {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+footer .footer-links__container .footer__links-1 .footer__link {
+  padding-right: 30px;
+}
+
+footer .footer-links__container .footer__links-2 .footer__link {
+  padding-left: 30px;
+}
+
+footer .footer-links__container .footer__links-1 .footer__link:hover,
+footer .footer-links__container .footer__links-2 .footer__link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 715px) {
+  .footer-links__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-links__container .footer__links-2 {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
